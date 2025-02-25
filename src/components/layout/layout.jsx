@@ -8,6 +8,7 @@ import Navbar from "../pages/Navbar";
 import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Portfolio from "../pages/Portfolio";
+import Footer from "../pages/footer";
 
 function Layout() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function Layout() {
         <About />
         <Skills />
         <Portfolio />
+        <Footer />
       </Container>
     </main>
   );

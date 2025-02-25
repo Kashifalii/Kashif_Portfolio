@@ -1,0 +1,82 @@
+.footer {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.formWrapper {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.textWrapper {
+    width: 50%;
+    font-family: "Exo", sans-serif;
+}
+
+.title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.title span {
+    color: #f4ab4f;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+
+.tagline {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.tagline span {
+    color: #f4ab4f;
+}
+
+.para {
+    color: #fff;
+    width: 70%;
+    font-weight: 300;
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactList li {
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactList li span {
+    background: #f4ab4f;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactList li span svg {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+}

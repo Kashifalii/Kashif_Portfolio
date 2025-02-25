@@ -28,7 +28,7 @@ function Navbar() {
         <span>skills</span>
       </li>
       <li>
-        <a href="#">
+        <a href="#portfolioSection">
           <MdWorkHistory />
         </a>
         <span>Portfolio</span>
