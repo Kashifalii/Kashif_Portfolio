@@ -43,26 +43,24 @@ function Header() {
             to make something extraordinary!"
           </p>
           <div className="socialIcons flex items-center gap-5">
-            <Link className="group relative flex items-center overflow-hidden rounded-md bg-[#f4aa4fc9] px-6 py-3 font-medium transition-all">
-              <span class="absolute top-0 right-0 inline-block h-4 w-4 rounded bg-[#f4ab4f] transition-all duration-500 ease-in-out group-hover:-mt-4 group-hover:-mr-4">
-                <span class="absolute top-0 right-0 h-5 w-5 -translate-y-1/2 translate-x-1/2 rotate-45 bg-gray-300" />
+            <Link href="#" className={styles.button}>
+              <span className={`${styles.corner} ${styles.cornerTopRight}`}>
+                <span className={styles.innerSquare} />
               </span>
-              <span class="absolute bottom-0 left-0 inline-block h-4 w-4 rotate-180 rounded bg-[#f4ab4f] transition-all duration-500 ease-in-out group-hover:-mb-4 group-hover:-ml-4">
-                <span class="absolute top-0 right-0 h-5 w-5 -translate-y-1/2 translate-x-1/2 rotate-45 bg-gray-300" />
+              <span className={`${styles.corner} ${styles.cornerBottomLeft}`}>
+                <span className={styles.innerSquare} />
               </span>
-              <span class="absolute bottom-0 left-0 h-full w-full -translate-x-full rounded-md bg-[#f4ab4f] transition-all duration-500 ease-in-out group-hover:translate-x-0" />
-              <span class="relative w-full text-left text-base text-[14px] text-white transition-colors duration-200 ease-in-out group-hover:text-white sm:text-[16px]">
-                Reach Out
-              </span>
+              <span className={styles.hoverEffect} />
+              <span className={styles.text}>Resume</span>
             </Link>
             <Link className={styles.icons}>
-              <FaLinkedinIn className="text-sm sm:text-lg" />
+              <FaLinkedinIn />
             </Link>
             <Link className={styles.icons}>
-              <FaFacebookF className="text-sm sm:text-lg" />
+              <FaFacebookF />
             </Link>
             <Link className={styles.icons}>
-              <FiGithub className="text-sm sm:text-lg" />
+              <FiGithub />
             </Link>
           </div>
         </div>
@@ -71,7 +69,7 @@ function Header() {
           data-aos="fade-in"
           data-aos-duration="2000"
         >
-          <img src={img1} loading="lazy" />
+          <img src={img1} loading="lazy" alt="header image" />
         </div>
       </div>
     </div>

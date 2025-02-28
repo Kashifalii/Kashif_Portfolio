@@ -34,7 +34,7 @@ function Navbar() {
         <span>Portfolio</span>
       </li>
       <li>
-        <a href="#">
+        <a href="#contact">
           <FaPhoneVolume />
         </a>
         <span>Contact</span>

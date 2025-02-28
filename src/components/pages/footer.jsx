@@ -7,8 +7,8 @@ import { MdAlternateEmail } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className={styles.footer}>
-      <div className={styles.textWrapper}>
+    <div className={styles.footer} id="contact">
+      <div className={styles.textWrapper} data-aos="fade-right">
         <h1 className={styles.title}>
           <span>|</span> contact me
         </h1>
@@ -42,7 +42,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className={styles.formWrapper}>
+      <div className={styles.formWrapper} data-aos="fade-left">
         <ContactCard />
       </div>
     </div>

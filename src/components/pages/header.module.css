@@ -273,3 +273,97 @@
         font-size: 37px !important;
     }
 }
+
+.button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: rgba(244, 170, 79, 0.8);
+    padding: 12px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.corner {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: #f4ab4f;
+    transition: all 0.5s ease-in-out;
+}
+
+.cornerTopRight {
+    top: 0;
+    right: 0;
+}
+
+.cornerBottomLeft {
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.cornerHoverTopRight {
+    margin-top: -16px;
+    margin-right: -16px;
+}
+
+.cornerHoverBottomLeft {
+    margin-bottom: -16px;
+    margin-left: -16px;
+}
+
+.innerSquare {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%) rotate(45deg);
+    background-color: #d1d5db;
+    /* gray-300 */
+}
+
+.hoverEffect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    border-radius: 6px;
+    background-color: #f4ab4f;
+    transition: all 0.5s ease-in-out;
+}
+
+.text {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+@media (min-width: 640px) {
+    .text {
+        font-size: 16px;
+    }
+}
+
+.button:hover .hoverEffect {
+    transform: translateX(0);
+}
+
+.button:hover .cornerTopRight {
+    margin-top: -16px;
+    margin-right: -16px;
+}
+
+.button:hover .cornerBottomLeft {
+    margin-bottom: -16px;
+    margin-left: -16px;
+}
