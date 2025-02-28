@@ -1,15 +1,25 @@
 import React from "react";
 import styles from "../pages/about.module.css";
 import aboutImg from "../assets/images/aboutImg.jpg";
-import aboutImgHz from "../assets/images/aboutImgHz.jpg";
+import aboutImgHz from "../assets/images/aboutImgHz.webp";
 import dots from "../assets/images/dots.png";
 
 function About() {
   return (
     <div className={styles.about} id="about">
       <div className={styles.CardWrap} data-aos="fade-right">
-        <img src={aboutImg} alt="About me" className={styles.cardImg1} />
-        <img src={aboutImgHz} alt="About me" className={styles.cardImg2} />
+        <img
+          src={aboutImg}
+          loading="lazy"
+          alt="About me"
+          className={styles.cardImg1}
+        />
+        <img
+          src={aboutImgHz}
+          loading="lazy"
+          alt="About me"
+          className={styles.cardImg2}
+        />
       </div>
       <div className={styles.TextWrap} data-aos="fade-left">
         <h1 className={styles.title}>ABOUT ME</h1>

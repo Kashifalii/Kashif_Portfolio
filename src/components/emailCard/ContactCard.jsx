@@ -27,7 +27,7 @@ export const ContactCard = () => {
       <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <div className={styles.formGroup}>
           <label htmlFor="name" className={styles.label}>
-            Company Name
+            Messanger Name
           </label>
           <input
             type="text"
@@ -39,7 +39,7 @@ export const ContactCard = () => {
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="email" className={styles.label}>
-            Company Email
+            Messanger Email
           </label>
           <input
             type="email"
@@ -51,7 +51,7 @@ export const ContactCard = () => {
         </div>
         <div className={styles.formGroup}>
           <label htmlFor="textarea" className={styles.label}>
-            How Can We Help You?
+            How Can I Help You?
           </label>
           <textarea
             name="message"

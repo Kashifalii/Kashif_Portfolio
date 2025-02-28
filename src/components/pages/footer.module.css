@@ -49,13 +49,19 @@
     font-weight: 300;
 }
 
+.lineBreak {
+    background: #f4aa4f77;
+    width: 80%;
+    height: 2px;
+    margin: 20px 0;
+}
+
 .contactList {
     list-style: none;
     padding: 0;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .contactList li {
@@ -63,7 +69,15 @@
     color: white;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    font-size: 16px;
+    letter-spacing: .2px;
+    font-weight: 300;
+    transition: all ease .3s;
+}
+
+.contactList li:hover {
+    color: #f4ab4f;
 }
 
 .contactList li span {
@@ -76,7 +90,154 @@
 }
 
 .contactList li span svg {
-    color: #fff;
-    width: 20px;
-    height: 20px;
+    color: #000;
+    width: 18px;
+    height: 18px;
+}
+
+/* media query */
+
+@media (max-width: 1399.98px) {
+    .title {
+        font-size: 19px;
+    }
+
+    .tagline {
+        font-size: 22px;
+    }
+
+    .para {
+        width: 95%;
+        font-size: 15px;
+    }
+
+    .formWrapper {
+        width: 48%;
+        padding-right: 0;
+    }
+
+    .textWrapper {
+        width: 52%;
+    }
+
+    .contactList {
+        gap: 10px;
+    }
+
+    .contactList li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .footer {
+        padding-top: 50px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .title span {
+        font-size: 20px;
+    }
+
+    .tagline {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .formWrapper {
+        width: 45%;
+    }
+
+    .textWrapper {
+        width: 55%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .formWrapper,
+    .textWrapper {
+        width: 100%;
+    }
+
+    .textWrapper {
+        margin-bottom: 50px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .title span {
+        font-size: 20px;
+    }
+
+    .tagline {
+        font-size: 25px;
+    }
+
+    .para {
+        font-size: 16px;
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .tagline {
+        font-size: 24px;
+    }
+
+    .para {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .lineBreak {
+        width: 100%;
+    }
+}
+
+@media (max-width: 625px) {
+    .tagline {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tagline {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 482px) {
+    .para {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .title span {
+        font-size: 18px;
+    }
+
+    .contactList li {
+        font-size: 13px;
+    }
+
+    .contactList li span svg {
+        width: 16px;
+        height: 16px;
+    }
 }

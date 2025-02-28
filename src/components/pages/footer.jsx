@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../pages/footer.module.css";
 import { ContactCard } from "../emailCard/ContactCard";
 import { FaMapLocationDot } from "react-icons/fa6";
-import { MdAddIcCall } from "react-icons/md";
+import { MdWifiCalling3 } from "react-icons/md";
 import { MdAlternateEmail } from "react-icons/md";
 
 function Footer() {
@@ -20,6 +20,7 @@ function Footer() {
           out today, and let’s discuss how I can assist you with top-quality web
           solutions.
         </p>
+        <hr className={styles.lineBreak} />
         <ul className={styles.contactList}>
           <li>
             <span>
@@ -29,7 +30,7 @@ function Footer() {
           </li>
           <li>
             <span>
-              <MdAddIcCall />
+              <MdWifiCalling3 />
             </span>
             03554435041 - 03460718860
           </li>

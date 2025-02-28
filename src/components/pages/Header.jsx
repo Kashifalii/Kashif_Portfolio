@@ -71,7 +71,7 @@ function Header() {
           data-aos="fade-in"
           data-aos-duration="2000"
         >
-          <img src={img1} />
+          <img src={img1} loading="lazy" />
         </div>
       </div>
     </div>

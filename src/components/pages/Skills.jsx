@@ -1,13 +1,13 @@
 import styles from "../pages/skill.module.css";
 import "aos/dist/aos.css";
-import htmlImg from "../assets/images/icons/html.png";
-import cssImg from "../assets/images/icons/css.png";
-import bootImg from "../assets/images/icons/boot.png";
-import tailImg from "../assets/images/icons/tail.png";
-import jsImg from "../assets/images/icons/js.png";
-import reactImg from "../assets/images/icons/react.png";
-import psImg from "../assets/images/icons/ps.png";
-import farmerImg from "../assets/images/icons/framer.png";
+import htmlImg from "../assets/images/icons/html.webp";
+import cssImg from "../assets/images/icons/css.webp";
+import bootImg from "../assets/images/icons/boot.webp";
+import tailImg from "../assets/images/icons/tail.webp";
+import jsImg from "../assets/images/icons/js.webp";
+import reactImg from "../assets/images/icons/react.webp";
+import psImg from "../assets/images/icons/ps.webp";
+import farmerImg from "../assets/images/icons/framer.webp";
 import dots from "../assets/images/dots.png";
 import { GrTechnology } from "react-icons/gr";
 import { VscVscode } from "react-icons/vsc";
@@ -119,6 +119,7 @@ const Skills = () => {
                     src={skill.image}
                     alt={skill.name}
                     className={styles.skillImage}
+                    loading="lazy"
                   />
                   <strong className={styles.backTitle}>{skill.name}</strong>
                 </div>

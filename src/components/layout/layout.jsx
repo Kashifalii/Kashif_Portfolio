@@ -12,7 +12,7 @@ import Footer from "../pages/footer";
 
 function Layout() {
   useEffect(() => {
-    AOS.init({ duration: 1500 }); // Initialize AOS globally for animations
+    AOS.init({ duration: 1500 });
   }, []);
 
   return (
