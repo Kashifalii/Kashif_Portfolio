@@ -14,13 +14,11 @@ function App() {
       const posX = e.clientX;
       const posY = e.clientY;
 
-      // Move the cursor dot
       if (cursorDot) {
         cursorDot.style.left = `${posX}px`;
         cursorDot.style.top = `${posY}px`;
       }
 
-      // Animate the cursor outline
       if (cursorOutline) {
         cursorOutline.animate(
           {
@@ -32,10 +30,8 @@ function App() {
       }
     };
 
-    // Add event listener for mouse movement
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
@@ -43,15 +39,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* Cursor elements */}
       <div ref={cursorDotRef} className="cursor-dot" data-cursor-dot></div>
       <div
         ref={cursorOutlineRef}
         className="cursor-outline"
         data-cursor-outline
       ></div>
-
-      {/* Main layout */}
       <Layout />
     </div>
   );
