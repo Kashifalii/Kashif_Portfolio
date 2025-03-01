@@ -9,6 +9,7 @@ import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Portfolio from "../pages/Portfolio";
 import Footer from "../pages/footer";
+import Loader from "../Loader/Loader";
 
 function Layout() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function Layout() {
 
   return (
     <main className={`${styles.main} relative`}>
+      <Loader />
       <Container>
         <Navbar />
         <Header />

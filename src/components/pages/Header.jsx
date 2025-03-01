@@ -6,6 +6,7 @@ import img1 from "../assets/images/header-img.webp";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
+import Cv from "../assets/Cv.pdf";
 
 function Header() {
   return (
@@ -42,8 +43,8 @@ function Header() {
             experiences and bringing creative ideas to life. Let’s work together
             to make something extraordinary!"
           </p>
-          <div className="socialIcons flex items-center gap-5">
-            <Link href="#" className={styles.button}>
+          <div className={styles.socialIcons}>
+            <a href={Cv} target="_blank" className={styles.button}>
               <span className={`${styles.corner} ${styles.cornerTopRight}`}>
                 <span className={styles.innerSquare} />
               </span>
@@ -52,7 +53,7 @@ function Header() {
               </span>
               <span className={styles.hoverEffect} />
               <span className={styles.text}>Resume</span>
-            </Link>
+            </a>
             <Link className={styles.icons}>
               <FaLinkedinIn />
             </Link>
