@@ -1,0 +1,493 @@
+.skillSec {
+    padding: 70px 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.do::before,
+.do::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background-color: white;
+}
+
+.do::before {
+    left: -110px;
+}
+
+.do::after {
+    right: -110px;
+}
+
+.cardWrapper {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+    perspective: 1000px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 10px 1px #000000ee;
+    border-radius: 5px;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    background-color: #151515;
+    border: 1px solid #f3a94e1a;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Exo", sans-serif;
+}
+
+.skillImage {
+    width: 80px;
+    height: 80px;
+    filter: grayscale(1);
+    margin-bottom: 15px;
+}
+
+.backTitle {
+    color: #f4ab4f;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.backContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.front {
+    transform: rotateY(180deg);
+    background-color: #1d1d1d;
+    position: relative;
+}
+
+.front::before {
+    position: absolute;
+    content: '';
+    width: 160px;
+    height: 160%;
+    background: linear-gradient(90deg, transparent, #f4ab4f, #f4ab4f, #f4ab4f, #f4ab4f, transparent);
+    animation: rotation_481 5s infinite linear;
+}
+
+@keyframes rotation_481 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.frontContent {
+    position: absolute;
+    width: 99%;
+    height: 99%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 20px;
+    background-color: #1d1d1d;
+}
+
+.badge {
+    background-color: #000000;
+    padding: 5px 10px;
+    border-radius: 50px;
+    backdrop-filter: blur(2px);
+    width: fit-content;
+    color: #f4ab4f;
+    border: 1px solid #f3a94e5a;
+    font-weight: 500;
+}
+
+.percentage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: #f4ab4f;
+    border-radius: 50%;
+    outline: 2px solid #f4ab4f;
+    outline-offset: 5px;
+}
+
+.percentage p {
+    margin: 0;
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+}
+
+/* textWrapper */
+
+.textWrapper {
+    font-family: "Exo", sans-serif;
+    /* padding-left: 100px; */
+    width: 55%;
+    overflow: hidden;
+}
+
+.title {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.title span {
+    font-size: 23px;
+    font-weight: 900;
+    color: #f4ab4f;
+}
+
+.tagline {
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .5px;
+    margin: 0;
+    line-height: 1.2;
+    width: 80%;
+}
+
+.tagline span {
+    color: #f4ab4f;
+}
+
+.dots {
+    width: 68px;
+    height: 17px;
+    margin: 15px 0 20px 0;
+    opacity: .9;
+}
+
+.para {
+    color: whitesmoke;
+    font-size: 19px;
+    width: 93%;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.tech {
+    color: white;
+    font-size: 17px;
+}
+
+.techTitle {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.techTitle span svg {
+    color: #f4ab4f;
+    width: 30px;
+    height: 30px;
+}
+
+.techTagline {
+    color: #f4ab4f;
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons svg {
+    color: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+.icons svg:hover {
+    color: #f4ab4f;
+    transform: scale(1.1);
+    transition: all ease-in-out .2s;
+}
+
+/* Media query */
+
+@media (max-width: 1404px) {
+
+    .cardWrapper,
+    .textWrapper {
+        width: 50%;
+    }
+
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skillImage {
+        width: 50px;
+        height: 50px;
+    }
+
+    .percentage {
+        width: 60px;
+        height: 60px;
+    }
+
+    .percentage p {
+        font-size: 15px;
+    }
+
+    .tagline {
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .para {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .icons svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 1399.98px) {
+    .cardWrapper {
+        padding-right: 0;
+        padding-left: 50px;
+    }
+
+    .card {
+        width: 140px;
+        height: 140px;
+    }
+
+    .backTitle {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .skillImage {
+        margin-bottom: 7px;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 3px 14px;
+    }
+
+    .percentage {
+        width: 50px;
+        height: 50px;
+    }
+
+    .percentage p {
+        font-size: 14px;
+    }
+
+    .tagline {
+        font-size: 30px;
+    }
+
+    .para {
+        font-size: 17px;
+    }
+
+    .techTitle {
+        gap: 10px;
+    }
+
+    .techTitle span svg {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .cardWrapper {
+        width: 40%;
+    }
+
+    .textWrapper {
+        width: 60%;
+    }
+
+    .dots {
+        width: 50.3px;
+        height: 12.5px;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    .techTagline {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 130px;
+        height: 130px;
+    }
+
+    .icons svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .skillSec {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .cardWrapper {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .textWrapper {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .cardWrapper {
+        gap: 45px;
+    }
+
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 587.98px) {
+    .para {
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .title span {
+        font-size: 20px;
+    }
+
+    .tagline {
+        font-size: 24px;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+    }
+
+    .icons svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .techTitle {
+        font-size: 18px;
+    }
+
+    .techTagline {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 480.98px) {
+    .tagline {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 393px) {
+    .cardWrapper {
+        gap: 20px;
+    }
+
+    .card {
+        width: 130px;
+        height: 130px;
+    }
+
+    .backTitle {
+        font-size: 13px;
+        letter-spacing: .3px;
+    }
+
+    .icons svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 328px) {
+    .card {
+        width: 100%;
+        height: 150px;
+    }
+}

@@ -1,0 +1,244 @@
+.footer {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.formWrapper {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.textWrapper {
+    width: 50%;
+    font-family: "Exo", sans-serif;
+}
+
+.title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.title span {
+    color: #f4ab4f;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+
+.tagline {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.tagline span {
+    color: #f4ab4f;
+}
+
+.para {
+    color: #fff;
+    width: 70%;
+    font-weight: 300;
+}
+
+.lineBreak {
+    background: #f4aa4f77;
+    width: 80%;
+    height: 2px;
+    margin: 20px 0;
+}
+
+.contactList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactList li {
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    letter-spacing: .2px;
+    font-weight: 300;
+    transition: all ease .3s;
+}
+
+.contactList li:hover {
+    color: #f4ab4f;
+}
+
+.contactList li span {
+    background: #f4ab4f;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactList li span svg {
+    color: #000;
+    width: 18px;
+    height: 18px;
+}
+
+/* media query */
+
+@media (max-width: 1399.98px) {
+    .title {
+        font-size: 19px;
+    }
+
+    .tagline {
+        font-size: 22px;
+    }
+
+    .para {
+        width: 95%;
+        font-size: 15px;
+    }
+
+    .formWrapper {
+        width: 48%;
+        padding-right: 0;
+    }
+
+    .textWrapper {
+        width: 52%;
+    }
+
+    .contactList {
+        gap: 10px;
+    }
+
+    .contactList li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .footer {
+        padding-top: 50px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .title span {
+        font-size: 20px;
+    }
+
+    .tagline {
+        font-size: 20px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .formWrapper {
+        width: 45%;
+    }
+
+    .textWrapper {
+        width: 55%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .formWrapper,
+    .textWrapper {
+        width: 100%;
+    }
+
+    .textWrapper {
+        margin-bottom: 50px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .title span {
+        font-size: 20px;
+    }
+
+    .tagline {
+        font-size: 25px;
+    }
+
+    .para {
+        font-size: 16px;
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .tagline {
+        font-size: 24px;
+    }
+
+    .para {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .lineBreak {
+        width: 100%;
+    }
+}
+
+@media (max-width: 625px) {
+    .tagline {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .tagline {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 482px) {
+    .para {
+        font-size: 13px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .title span {
+        font-size: 18px;
+    }
+
+    .contactList li {
+        font-size: 13px;
+    }
+
+    .contactList li span svg {
+        width: 16px;
+        height: 16px;
+    }
+}
